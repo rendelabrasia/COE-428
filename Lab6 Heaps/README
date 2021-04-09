@@ -1,0 +1,8 @@
+Summarize the lab: 
+  - I had issues with the code for getting the ascending and descending order to work. 
+  - It is giving an output of the same number such as all 3s. 
+  - The XML expression part of the heap works perfectly fine.
+   - For the output to show up, please press ctrl + D twice.
+                  
+Got my inspiration with this source: https://www.programiz.com/dsa/heap-data-structure 
+This helped me understand how the parent and children node works and how heap data structure function.
