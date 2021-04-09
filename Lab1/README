@@ -1,0 +1,42 @@
+Questions:
+Answer the following questions in a file named README.
+
+1. Suppose you were given an object module (with no access to source code) that sorted an
+array of integers very efficiently. However, the sort function in the object module must
+be invoked with the following signature:
+
+                     betterSort(int data[], first, last);
+
+where the array to sort is data and the parameters first and last give the indices of the
+portion of the array that is to be sorted.
+How could you write a mySort() function with the signature used in this lab that could
+exploit the better sorting function in the supplied object module? 
+
+Solution:
+- A way to write a mySort() with the given signature would be somewhat the same as the one taught in class. (Insertion Sort)
+
+  void betterSort(int data[], first, last)
+
+  {
+  /*INSERTION-SORT (data)*/
+  int x, y, m, n;
+  
+  for (x = 0; x < (size - 1); x++)
+   {
+  	m = x;
+    for (y = (x + 1); y < size; y++)
+    {
+      if (A[y] < A[m])
+        {         
+          first = data[m];
+          last = data[x];
+            m = y;
+            n = first;
+          first = last;
+          last = n; 
+        }
+     }
+    }
+   }
+
+Code: Everything Works.
