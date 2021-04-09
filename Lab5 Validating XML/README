@@ -1,0 +1,53 @@
+Summarize your lab: 
+         
+        -I got the backbones of my code from https://www.tutorialspoint.com/data_structures_algorithms/stack_program_in_c.htm 
+        -I got the "97" number idea from : https://stackoverflow.com/questions/29586564/what-does-the-97-mean-in-the-following-code
+        -I didn't add the MAXSIZE since I think that it is not needed for this lab. This helped me start my implementation of my push(), pop(), and isEmpty() method.
+      
+        
+  Part 1:
+     Works  Yes 
+     
+  Part 2:
+     Works  Yes 
+     
+  Part 3:
+     Works  Nope
+     
+***ANSWERS TO QUESTIONS***
+ Question 1:
+     Which hash table collision resolution method did you use
+     (eg. chaining or open addressing)? Explain your choice
+     briefly (less than 25 words).
+ YOUR ANSWER:
+ 
+- Since of the time crunch, I was not able to implement any method for hash table collision resolution for Part 3.  
+  Given the chance to do so, I would choose the open addressing method as it is faster and more efficient since they don't need to follow pointers and the 
+  pair of keys are in stored in the hash table. 
+  
+ 
+ 
+ Question 2:
+       Which hash function (division or multiplication) did you use?
+       How did you convert a string into a number?
+ YOUR ANSWER:
+- If I had the chance to finish it, I would pick the division method since it is faster to implement than the multiplication. 
+  The purpose of this to find the remainder of the key when divided by the slot value. 
+  In class, the professor also discussed that using division is a faster way than the multiplication in the lecture. 
+  Using ASCII table is the way to convert strings into a number by the use of atoi().
+ 
+ 
+ Question 3:
+       Another legal XML tag not used in this lab is the
+       stand-alone tag.  This kind of tag
+       combines both a start-tag and end-tag in one.
+       It is identified with a '/' (slash) preceding the
+       final >.  (For example, the <foo/>
+       is a stand-alone tag that is self balancing.
+       
+       Describe briefly how
+       you would modify Part 3 to allow this kind of tag.
+       
+ YOUR ANSWER:
+ - How I would modify this is to look for a stand-alone tag and adding it with an if statement. 
+   The purpose of this is to check if the "/" is present after the character. If it is present, then it is a stand-alone tag, otherwise it is not.   
