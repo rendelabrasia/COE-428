@@ -1,0 +1,44 @@
+  1) Brief Summary:
+  What was achieved in this lab is to learn and understand the use of make all, myCompare, mySwap, and myCopy.
+  - The use of myCopy is to keep in track of the position of individual data elements.
+  - The use of mySwap is to interchange the elements of the two arrays being compared to at the moment.
+  - The use of myCompare is to return a negative number if and only if x < y. 
+  - The use of make all is to ease the process of compiling the files with one command, instead of doing gcc -o and gcc -c every line.
+  
+  The use of insertion sorts and merging sorts was also learned and recalled here in this lab from what was learned in class. 
+  Learned how to implement merging sort in the code with the use of for loop and while loop to show the sorting method of values that can be given by a person.
+ 
+  Few Errors happened in between like forgetting to put an "&" to declare pointers and semicolons, but Overall, it works perfectly fine.
+  
+
+  2) Analysis for the best, average, and worst case scenario:
+                                                           
+                                      For Insertion Sort 
+ *Quick note: "O" stands for Omega*
+  Best Case (O(n)): It is a sorting algorithm that is already in the right order. 
+   Written below are the formulas used in order to get the number of comparisons, copies, and swap:
+   - For Number of Comparisons: n-1
+   - For Number of Swaps: 0
+   - For Number of Copies: 2n-2 
+   Let's say have numbers such as 1 2 3 4 5. The results in the testFile I did were 4 Comparisons, 0 Swaps, and 5 Copies. 
+  
+  Average Case (O(n^2)): It is a sorting algorithm when some numbers are sorted in the right order. It is also the case where (best case + worst case)/2.
+    Written below are the formulas used in order to get the number of comparisons, copies, and swap:
+   - For Number of Comparisons: (n-1+n(n-1)/2)/2
+   - For Number of Swaps: n(n-1)/2
+   - For Number of Copies: 2n-2
+   Let's say have numbers such as 1 3 2 5 4. The results in the testFile I did were 6 Comparisons, 2 Swaps, and 5 Copies. 
+
+  Worst Case (O(n^2)): It is a sorting algorithm when the numbers are in a reverse order.
+   Written below are the formulas used in order to get the number of comparisons, copies, and swap:
+   - Number of Comparisons: n(n-1)/2
+   - Number of Swaps: n(n-1)/2
+   - Number of Copies: 2n-2
+   Let's say have numbers such as 5 4 3 2 1. The results in the testFile I did were 10 Comparisons, 10 Swaps, and 5 Copies. 
+
+                                        For Merge Sort
+ Best Case: O(nlogn): Let's say have numbers such as 1 2 3 4 5. The results in the testFile I did, was 7 Comparisons, 12 Swaps, and 12 Copies. 
+		
+ Worst Case: O(nlogn): Let's say have numbers such as 5 4 3 2 1. The results in the testFile I did were 5 Comparisons, 12 Swaps, and 12 Copies. 
+
+ Average Case: O(nlogn): Let's say have numbers such as 1 3 2 5 4. The results in the testFile I did were 7 Comparisons, 12 Swaps, and 12 Copies. 
