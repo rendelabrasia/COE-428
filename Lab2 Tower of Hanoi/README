@@ -1,0 +1,75 @@
+Question:
+Suppose that towers(5, 2, 3) is invoked.
+1. How will the first recursive call to towers() be invoked? Answer this
+question in the form: towers(x, y, z) where you give the actual values to the
+three parameters.
+2. How many recursive calls to towers() will be made before this first recursive
+call actually returns to the initial invocation?
+3. Once towers(5, 2, 3) has invoked its first recursive call to towers() and this
+invocation has returned, what will be printed to stdout? (i.e. What actual
+move will be made by towers(5, 2, 3) ?) 
+4. How will the second recursive call to towers() be invoked? Answer this
+question in the form: towers(x, y, z) where you give the actual values to the
+three parameters.
+5. Suppose that towers(8, 1, 2) is invoked. How many lines will be printed to stdout?
+6. A brief description of what you did (and did not) achieve in the Lab.
+
+Answer:
+1) We have (5,2,3) being invoked in the tower. From the code, we have variables n,from,dest in that order. We can conclude 5 is our n, 2 is our from, and 3 is our dest.
+In order to get the actual values for towers(x,y,z), we have to do the following. The output is going to be towers(n-1,from,spare). 
+With the code: spare = 6 - from - dest, this will be 6-2-3 = 1(spare). Therefore, the first recursive call to towers() will be towers(4,2,1).
+
+2) We have (5,2,3) being invoked in the tower. From the theorem we have in the 1st question, we will follow that format until n would equal to 0.
+The first recursive call is towers(4,2,1).
+The second recursive call is towers(3,2,3).
+The third recursive call is towers(2,2,1).
+The fourth recursive call is towers(1,2,3).
+The fifth recursive call is towers(0,2,1).
+
+Therefore there are 5 recursive calls to towers() will be made before this first recursive call actually returns to the initial invocation.
+
+3) The code was changed to match the following conditions were 5 =n, 2= from, 3= dest. 
+Printed out by stdout, there were 31 moves made. The outputs are shown below:
+
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+2 1
+3 1
+3 2
+1 2
+3 1
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+1 2
+3 1
+3 2
+1 2
+1 3
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+
+4)We have (4,2,1) being invoked in the tower. From the code, we have variables n,from,dest in that order. We can conclude 4 is our n, 2 is our from, and 1 is our dest.
+In order to get the actual values for towers(x,y,z) for the second recursive call, we have to do the following. The output is going to be towers(n-1,from,spare). 
+With the code: spare = 6 - from - dest, this will be 6-2-1 = 3(spare). Therefore, the first recursive call to towers() will be towers(3,2,3).
+
+5) The formula for the time complexity is T(n) = 2^(n)-1. n = 8: therefore T(n) = 2^(8)-1 = 255 lines.
+There will be 255 output lines.
+
+6) In this lab, I learned the concept of Tower of Hanoi through the form of recursion. I figured out how to code and edit the main file by figuring out the bugs in the code and how the disks moves from one tower to another. I also learned how the arguments worked and what they do to the code and its syntax. I also discovered some restrictions that can give illegal outputs with the codes such as OutOfBoundsException and negative numbers. With the help of the notes learned in class and working out the process in the lab, in the end, there were no issues in the code and everything worked out as intended to be.
+
+
